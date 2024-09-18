@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی</title>
+    <link rel="icon" href="./static/favicon.png">
+
+    <style>
+        @font-face {
+            font-family: B Farnaz;
+            src: url("fonts/BFarnaz.ttf") format("ttf");
+        }
+
+        body {
+            background: linear-gradient(180deg, #000428, #004e92);
+            margin: 0;
+            font-family: B Farnaz;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            height: 100vh;
+        }
+
+        #container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #logo {
+            width: 15%;
+            height: auto;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+
+        #header {
+            width: 100%;
+            border-radius: 20px;
+            height: 80px;
+            background: rgba(10, 10, 10, 0.8);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            justify-content: space-between;
+        }
+
+        #nav-links a {
+            text-decoration: none;
+            color: #00ffcc;
+            padding: 8px 15px;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+
+        #nav-links a:hover {
+            color: #ffdc00;
+            text-shadow: 0 0 5px #ffdc00;
+            transform: scale(1.1);
+        }
+
+        #welcome {
+            margin: 40px 0;
+            font-size: 24px;
+            padding: 20px;
+            background: rgba(10, 10, 10, 0.8);
+            border-radius: 20px;
+        }
+
+        #div3 {
+            width: 100%;
+            background: rgba(10, 10, 10, 0.8);
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .lessons {
+            text-align: center;
+            width: 150px;
+            text-decoration: none;
+            color: #ffffff;
+            border: 2px solid rgba(0, 150, 255, 0.5);
+            border-radius: 15px;
+            background: rgba(0, 128, 255, 0.7);
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+
+        .lessons:hover {
+            background-color: rgba(0, 150, 255, 0.9);
+            transform: scale(1.05);
+        }
+
+        @media only screen and (max-width: 600px) {
+            #logo {
+                width: 40%;
+            }
+
+            .lessons {
+                width: 90%;
+            }
+
+            #welcome {
+                font-size: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <div id="header">
+                <img id="logo" src="./static/logo.png" alt="Logo">
+                <div id="nav-links">
+                    <a href="./tabel.html">جدول رده بندی</a>
+                    <a href="./contact us.html">تماس با ما</a>
+                    <a href="./index.html">صفحه ی اصلی</a>
+                </div>
+            </div>
+        </header>
+
+        <div id="welcome">
+            <h1>به وبسایت سراجینو خوش آمدید</h1>
+            <p>از اینجا می‌توانید به مطالب درسی و نمونه سوال ها دسترسی پیدا کنید.</p>
+        </div>
+
+        <div id="div3">
+            <a class="lessons" href="./hedie.html">هدیه</a>
+            <a class="lessons" href="./riazi.html">ریاضی</a>
+            <a class="lessons" href="./olom.html">علوم</a>
+            <a class="lessons" href="./farsi.html">فارسی</a>
+            <a class="lessons" href="./ajtemae.html">اجتماعی</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <style>
+        @font-face {
+            font-family: B Farnaz;
+            src: url("fonts/BFarnaz.ttf") format("ttf");
+        }
+
+        body {
+            background: linear-gradient(180deg, #000428, #004e92);
+            margin: 0;
+            padding: 0;
+            font-family: B Farnaz;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        #container {
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #logo {
+            width: 150px;
+            height: auto;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+
+        #header {
+            width: 90%;
+            border-radius: 20px;
+            height: 80px;
+            background: rgba(10, 10, 10, 0.8);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            justify-content: space-between;
+        }
+
+        #nav-links a {
+            text-decoration: none;
+            color: #00ffcc;
+            padding: 8px 15px;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+
+        #nav-links a:hover {
+            color: #ffdc00;
+            text-shadow: 0 0 5px #ffdc00;
+            transform: scale(1.1);
+        }
+
+        #div2 {
+            width: 45%;
+            height: 35%;
+            background-color: rgba(10, 10, 10, 0.8);
+            position: fixed;
+            top: 300px;
+            left: 28%;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        #div2:hover {
+            transform: scale(1.02);
+        }
+
+        #sadegh_phone,
+        #avini_phone,
+        #alisa_phone {
+            display: inline-block;
+            margin-right: 3%;
+        }
+
+        .p {
+            font-family: B Farnaz;
+            border: 5px black hidden;
+            border-radius: 10px;
+            padding: 8px;
+            margin-bottom: 5%;
+            margin-top: 0%;
+            font-size: 30px;
+            display: inline-block;
+        }
+
+        .label {
+            font-family: B Farnaz;
+            margin-right: 8%;
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width: 1200px) {
+
+            .label {
+
+                font-size: 23px;
+            }
+
+            .p {
+
+                font-size: 23px;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            #div2 {
+
+                left: 13%;
+
+                top: 150px;
+
+                height: 60%;
+
+                width: 70%;
+            }
+
+            .label {
+
+                display: block;
+                margin-bottom: 3%;
+            }
+
+            .p {
+
+                border: 5px #004e92 solid;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <div id="header">
+                <img id="logo" src="./static/logo.png" alt="Logo">
+                <div id="nav-links">
+                    <a href="./tabel.html">جدول رده بندی</a>
+                    <a href="./contact us.html">تماس با ما</a>
+                    <a href="./index.html">صفحه ی اصلی</a>
+                </div>
+            </div>
+        </header>
+
+        <div id="div2">
+            <label id="sadegh" class="label" for="sadegh_phone"> محمد صادق ابراهیمی:</label>
+            <p id="sadegh_phone" class="p">02144722486</p>
+            <br>
+            <label id="avini" class="label" for="avini_phone"> سید محمد هادی آوینی:</label>
+            <p id="avini_phone" class="p">09021442721</p>
+            <br>
+            <label id="alisa" class="label" for="alisa_phone"> علیسا فخرالدین:</label>
+            <p id="alisa_phone" class="p">02144706392</p>
+        </div>
+
+</body>
+
+</html>
